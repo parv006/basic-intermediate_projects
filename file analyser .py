@@ -10,7 +10,7 @@ root = tk.Tk()
 root.geometry('1800x1100')
 root.title('CSV analyst')
 
-# Title and Entry
+
 title = tk.Label(text='CSV analyst', font=('Sans Serif', 28, 'bold'), fg='grey')
 title.pack()
 
@@ -26,12 +26,12 @@ exception_window_rectange.create_rectangle(5,5,450,40,outline='grey',width=2)
 exception_window=tk.Label(text='any exception will be listed here ')
 exception_window.place(x=100, y=150)
 
-# Red rectangle for visual structure
+
 canvas_border = tk.Canvas(root, width=900, height=350)
 canvas_border.place(x=100, y=300)
 canvas_border.create_rectangle(2, 3, 870, 300, outline="grey", width=5)
 
-# Scrollable Canvas Setup
+
 scroll_canvas = tk.Canvas(root, width=750, height=180)
 scroll_canvas.place(x=150, y=350)
 
@@ -177,7 +177,7 @@ def draw_hist():
     plot_canvas.get_tk_widget().place(x=1000, y=400, width=780, height=600)
 
 
-# Buttons
+
 
 check_deli=tk.Button(text='change seperator',command=seperation_changer)
 check_deli.place(x=850,y=246)
@@ -206,3 +206,4 @@ graph_plot.place(x=1350,y=350)
 graph_histogram.place(x=1470,y=350)
 
 root.mainloop()
+
